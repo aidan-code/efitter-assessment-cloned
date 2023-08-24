@@ -1,9 +1,10 @@
 import React from "react";
+import Sidebar from "../resources/Sidebar.js";
 
 const New = () => {
   return (
     <div>
-      <h1>Hello world</h1>
+      <Sidebar />
     </div>
   );
 };

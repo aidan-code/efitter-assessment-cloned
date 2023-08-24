@@ -1,0 +1,73 @@
+.sidebar_cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Sidebar {
+  width: 100%;
+  /* background-color: #000; */
+}
+.logo {
+  flex-direction: column;
+} 
+.logo.cont {
+  width: 100%;
+}
+a {
+  text-decoration: none !important ;
+  color: #fff !important;
+}
+.logo img {
+  width: 150px;
+  padding: 30px;
+}
+.logo-div {
+  background: #712e49;
+  height: 500px;
+  position: fixed;
+
+  left: 0;
+}
+
+.main {
+  background-color: #fff;
+  height: 500px;
+
+  margin-left: 15%;
+  width: 70%;
+}
+.data-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.Ecomponents {
+  padding: 20px;
+}
+.main_pl {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 40px;
+}
+.performance img {
+  height: 70px;
+  width: 100px;
+  margin-top: 20px;
+}
+.Your_perform h3 {
+  padding-right: 50px;
+}
+.card-container {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.arrow {
+  display: flex;
+}
+.graphs {
+  width: 100%;
+  height: 500px;
+}
