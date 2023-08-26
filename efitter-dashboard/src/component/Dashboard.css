@@ -1,0 +1,8 @@
+.Dashboard {
+  height: 100vh;
+  display: flex;
+}
+
+.Outlet {
+  width: 100%;
+}

@@ -1,73 +1,66 @@
-.sidebar_cont {
+.Sidebar {
+  height: 100%;
+  width: 25%;
+  background-color: #712e49;
+}
+
+.sidebar_content {
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  margin: 50px 0px;
+}
+
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.Sidebar {
-  width: 100%;
-  /* background-color: #000; */
-}
-.logo {
-  flex-direction: column;
-} 
-.logo.cont {
-  width: 100%;
-}
-a {
-  text-decoration: none !important ;
-  color: #fff !important;
-}
+
 .logo img {
-  width: 150px;
-  padding: 30px;
-}
-.logo-div {
-  background: #712e49;
-  height: 500px;
-  position: fixed;
-
-  left: 0;
+  height: 70px;
 }
 
-.main {
-  background-color: #fff;
-  height: 500px;
+.Ecomponents a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 10px 20px;
+  margin: 20px 0px;
+  border-radius: 5px;
 
-  margin-left: 15%;
-  width: 70%;
-}
-.data-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 150px;
+}
+
+.ctflex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Ecomponents a p {
+  margin: 0px;
+}
+
+.Ecomponents a.active {
+  background-color: #ffd9e3;
+  color: #712e49;
+}
+
+.labels {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.labels img {
+  margin-right: 20px;
 }
 
 .Ecomponents {
   padding: 20px;
-}
-.main_pl {
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  padding: 40px;
-}
-.performance img {
-  height: 70px;
-  width: 100px;
-  margin-top: 20px;
-}
-.Your_perform h3 {
-  padding-right: 50px;
-}
-.card-container {
-  display: flex;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.arrow {
-  display: flex;
-}
-.graphs {
-  width: 100%;
-  height: 500px;
 }
