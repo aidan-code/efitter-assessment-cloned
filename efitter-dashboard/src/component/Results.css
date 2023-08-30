@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 .result {
   width: auto;
   height: auto;
@@ -93,7 +95,7 @@
   align-items: flex-start;
   height: 400px;
   width: auto;
-  padding: 10px 0px;
+  padding: 20px 0px 0px 0px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -107,6 +109,7 @@
   font-size: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: 200;
+  margin: 5px 0px;
 }
 
 .selection select {
@@ -117,7 +120,7 @@
 .Download {
   background-color: #ffd9e3;
   color: #712e49;
-  padding: 15px 30px;
+  padding: 15px 50px;
   border-radius: 5px;
 }
 

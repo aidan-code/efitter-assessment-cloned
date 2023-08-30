@@ -1,65 +1,113 @@
 import React from "react";
 import "./Sidebar.css";
 import Efitter from "../assets/Efitter.svg";
-import Vector from "../assets/Vector.svg";
-import Graph from "../assets/Graph.svg";
-import LightGraph from "../assets/LightGraph.svg";
-import Paint_tray from "../assets/Paint_tray.svg";
-import Settings from "../assets/settings.svg";
-import ManageUsers from "../assets/ManageUsers.svg";
-import Group from "../assets/Group.svg";
+// import Vector from "../assets/Vector.svg";
+// import Graph from "../assets/Graph.svg";
+// import LightGraph from "../assets/LightGraph.svg";
+// import Paint_tray from "../assets/Paint_tray.svg";
+// import Settings from "../assets/settings.svg";
+// import ManageUsers from "../assets/ManageUsers.svg";
+// import Group from "../assets/Group.svg";
 import arrowdark from "../assets/arrowdark.svg";
 import { NavLink } from "react-router-dom";
-
+import { useState } from "react";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import SpeedIcon from "@mui/icons-material/Speed";
+import ShowChartOutlinedIcon from "@mui/icons-material/ShowChartOutlined";
+import ColorLensOutlinedIcon from "@mui/icons-material/ColorLensOutlined";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
 const navData = [
   {
     page: "/dash",
     label: "Dashboard",
-    icon: Vector,
-    iconDark: Vector,
-
-    arrowlight: Group,
-    arrowDark: arrowdark,
+    icon: (
+      <SpeedIcon
+        fontSize="10px"
+        edge="start"
+        color="ffd9e3"
+        sx={{
+          ".active &": {
+            color: "712e49",
+          },
+        }}
+      />
+    ),
   },
 
   {
     page: "/result",
     label: "Result",
-    icon: LightGraph,
-    iconDark: Graph,
-
-    arrowlight: Group,
-    arrowDark: Group,
+    icon: (
+      <ShowChartOutlinedIcon
+        fontSize="10px"
+        edge="start"
+        color="ffd9e3"
+        sx={{
+          ".active &": {
+            color: "712e49",
+          },
+        }}
+      />
+    ),
   },
 
   {
     page: "/design",
     label: "Design",
-    icon: Paint_tray,
-    iconDark: Paint_tray,
-
-    arrowlight: Group,
-    arrowDark: Group,
+    icon: (
+      <ColorLensOutlinedIcon
+        fontSize="10px"
+        edge="start"
+        color="ffd9e3"
+        sx={{
+          ".active &": {
+            color: "712e49",
+          },
+        }}
+      />
+    ),
   },
 
   {
     page: "/setup",
     label: "Set up",
-    icon: Settings,
-    arrowlight: Group,
-    arrowDark: Group,
+    icon: (
+      <SettingsOutlinedIcon
+        fontSize="10px"
+        margin="20px"
+        edge="start"
+        color="ffd9e3"
+        sx={{
+          ".active &": {
+            color: "712e49",
+          },
+        }}
+      />
+    ),
   },
 
   {
     page: "/Manage",
     label: "Manage Users",
-    icon: ManageUsers,
-    arrowlight: Group,
-    arrowDark: Group,
+    icon: (
+      <GroupOutlinedIcon
+        fontSize="10px"
+        edge="start"
+        color="ffd9e3"
+        sx={{
+          ".active &": {
+            color: "712e49",
+          },
+        }}
+      />
+    ),
   },
 ];
 
 const Sidebar = () => {
+  const [newActiveLink, setNewActiveLink] = useState(false);
+
   return (
     <div className="Sidebar">
       <div className="sidebar_content">
@@ -69,23 +117,32 @@ const Sidebar = () => {
 
         <div className="Ecomponents">
           {navData.map((data, index) => (
-            <NavLink key={index} to={data.page}>
-              {({ isActive }) => (
-                <div className="ctflex">
-                  <div className="labels">
-                    <img src={data.icon} alt="" />
-                    <p>{data.label}</p>
-                  </div>
-
-                  {isActive ? (
-                    <img src={data.arrowDark} alt="ardark" />
-                  ) : (
-                    <img src={data.arrowlight} alt="light" />
-                  )}
+            <NavLink
+              key={index}
+              to={data.page}
+              // isActive={(match, location) => {
+              //   match && setNewActiveLink(index); // <-- set active index
+              //   return match; // <-- return boolean
+              // }}
+            >
+              <div className="ctflex">
+                <div className="labels">
+                  {data.icon}
+                  <p className="textlabel">{data.label}</p>
                 </div>
-              )}
+                <ArrowForwardIosIcon
+                  fontSize= "5px"
+                  edge="start"
+                  color="ffd9e3"
+                  sx={{
+                    ".active &": {
+                      color: "712e49",
+                    },
+                  }}
+                />
 
-              {/* </div> */}
+                
+              </div>
             </NavLink>
           ))}
         </div>
@@ -93,5 +150,4 @@ const Sidebar = () => {
     </div>
   );
 };
-
 export default Sidebar;

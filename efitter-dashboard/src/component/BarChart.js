@@ -23,7 +23,7 @@ const Bars = ({ dataPass }) => {
     if (selectValue === 1) {
       setDropedValue([37, 60, 44, 75, 81, 64, 72, 67]);
     } else if (selectValue === 2) {
-      setDropedValue([31, 80, 54, 71, 41, 74, 59, 61]);
+      setDropedValue([41, 80, 54, 71, 41, 74, 59, 61]);
     } else if (selectValue === 3) {
       setDropedValue([57, 58, 44, 55, 61, 54, 72, 81]);
     }
@@ -33,7 +33,7 @@ const Bars = ({ dataPass }) => {
     labels: ["Jan", "Feb", "Mar", "May", "Jun", "Jul", "Aug"],
     datasets: [
       {
-        label: "My First Dataset",
+        label: "without efitter",
         // [65, 69, 70, 50, 56, 56, 72, 41]
         data: dropedValue,
         backgroundColor: "#712e49",
@@ -43,7 +43,7 @@ const Bars = ({ dataPass }) => {
       },
 
       {
-        label: "My First Dataset",
+        label: "with efitter",
         // [65, 59, 80, 81, 45, 66, 36, 37]
         data: dropedValue,
         backgroundColor: "#ffd9e3",
@@ -78,7 +78,7 @@ const Bars = ({ dataPass }) => {
         },
       },
       y: {
-        beginAtZero: true,
+        beginAtZero: false,
         grid: {
           display: false,
         },

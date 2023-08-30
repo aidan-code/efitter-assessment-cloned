@@ -84,9 +84,9 @@ const Results = () => {
 
           <div className="selection">
             <select className="D-sel" onChange={handleDrop} value={dropValue}>
-              <option value="1">1-month</option>
-              <option value="2">6-months</option>
-              <option value="3">1-year</option>
+              <option value="1">Weekly</option>
+              <option value="2">Monthly</option>
+              <option value="3">Yearly</option>
             </select>
           </div>
         </div>

@@ -6,6 +6,8 @@ import New from "./component/New";
 import Test from "./resources/test";
 import Results from "./component/Results";
 import Dashboard from "./component/Dashboard";
+import Design from "./component/Design";
+import Specifics from "./component/specs";
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Dashboard />}>
           <Route path="/result" element={<Results />} />
+          <Route path="/design" element={<Design />}>
+            <Route exact path="/design/Specs" element={<Specifics />} />
+          </Route>
         </Route>
-        {/* <Route path="/test" element={<Test />} /> */}
       </Routes>
     </div>
   );

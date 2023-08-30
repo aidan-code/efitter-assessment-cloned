@@ -1,0 +1,17 @@
+.s-prop {
+  display: flex;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+}
+
+.s-prop select {
+  margin: 0px 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.ny-7b {
+  font-weight: 200;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}

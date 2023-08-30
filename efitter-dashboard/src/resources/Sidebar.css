@@ -25,8 +25,8 @@
   text-decoration: none;
   color: #fff;
   font-size: 18px;
-  font-weight: lighter;
-  padding: 10px 20px;
+  font-weight: bold;
+  padding: 10px 10px;
   margin: 20px 0px;
   border-radius: 5px;
 
@@ -57,8 +57,10 @@
   width: 100%;
 }
 
-.labels img {
-  margin-right: 20px;
+.textlabel {
+  padding: 0px 10px;
+  font-weight: lighter;
+  font-size: 16px;
 }
 
 .Ecomponents {
