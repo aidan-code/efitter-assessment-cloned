@@ -21,7 +21,7 @@ const Design = () => {
               <NavLink to="/">Design Editor</NavLink>
             </p>
             <p>
-              <NavLink to="/design/Specs" >Copy Editor</NavLink>
+              <NavLink to="/design/" >Copy Editor</NavLink>
             </p>
           </div>
 
