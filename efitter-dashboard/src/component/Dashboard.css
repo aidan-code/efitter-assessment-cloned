@@ -3,9 +3,12 @@
 .Dashboard {
   height: 100vh;
   display: flex;
-  border: 1px solid black;
+  
 }
 
 .Outlet {
+  height: 100vh;
+  overflow-y: scroll;
   width: 100%;
+ 
 }

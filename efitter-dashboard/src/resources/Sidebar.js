@@ -17,6 +17,7 @@ import ShowChartOutlinedIcon from "@mui/icons-material/ShowChartOutlined";
 import ColorLensOutlinedIcon from "@mui/icons-material/ColorLensOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
+
 const navData = [
   {
     page: "/dash",
@@ -36,7 +37,7 @@ const navData = [
   },
 
   {
-    page: "/result",
+    page: "/",
     label: "Result",
     icon: (
       <ShowChartOutlinedIcon
