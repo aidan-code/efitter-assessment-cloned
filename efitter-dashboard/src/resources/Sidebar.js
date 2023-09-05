@@ -36,7 +36,7 @@ const navData = [
   },
 
   {
-    page: "/result",
+    page: "/",
     label: "Result",
     icon: (
       <ShowChartOutlinedIcon

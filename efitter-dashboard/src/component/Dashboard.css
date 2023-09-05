@@ -3,7 +3,6 @@
 .Dashboard {
   height: 100vh;
   display: flex;
-  border: 1px solid black;
 }
 
 .Outlet {
